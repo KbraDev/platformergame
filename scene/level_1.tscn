@@ -1,0 +1,237 @@
+[gd_scene load_steps=7 format=3 uid="uid://duk63pctrmfq6"]
+
+[ext_resource type="PackedScene" uid="uid://bwtukao5xo71u" path="res://scene/vitual_Boy.tscn" id="1_v4n18"]
+[ext_resource type="PackedScene" uid="uid://ceu5mhtcluggb" path="res://scene/floors/grass/grassFloor.tscn" id="2_gi730"]
+[ext_resource type="PackedScene" uid="uid://vjaa8aks1kso" path="res://scene/floors/grass/dirtFloor2d.tscn" id="3_pu6iv"]
+[ext_resource type="PackedScene" uid="uid://c3ig0d1jifcm" path="res://scene/floors/grass/cape_grass.tscn" id="4_35rus"]
+[ext_resource type="PackedScene" uid="uid://cr5upjxbyvgmv" path="res://scene/floors/block/largeBlock.tscn" id="5_3h115"]
+[ext_resource type="PackedScene" uid="uid://dk15ho0hyacen" path="res://scene/floors/block/block.tscn" id="6_gr3ly"]
+
+[node name="level1" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_v4n18")]
+position = Vector2(111, 1860)
+
+[node name="floor" parent="." instance=ExtResource("2_gi730")]
+position = Vector2(0, 1863)
+
+[node name="StaticBody2D10" parent="floor" instance=ExtResource("3_pu6iv")]
+position = Vector2(515, 209)
+
+[node name="StaticBody2D7" parent="floor" instance=ExtResource("3_pu6iv")]
+position = Vector2(216, 209)
+
+[node name="StaticBody2D8" parent="floor" instance=ExtResource("3_pu6iv")]
+position = Vector2(108, 209)
+
+[node name="StaticBody2D6" parent="floor" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 209)
+
+[node name="StaticBody2D2" parent="floor" instance=ExtResource("2_gi730")]
+position = Vector2(108, 105)
+
+[node name="StaticBody2D3" parent="floor" instance=ExtResource("2_gi730")]
+position = Vector2(215, 105)
+
+[node name="StaticBody2D4" parent="floor" instance=ExtResource("2_gi730")]
+position = Vector2(323, 105)
+
+[node name="StaticBody2D" parent="floor" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 105)
+
+[node name="StaticBody2D9" parent="floor" instance=ExtResource("3_pu6iv")]
+position = Vector2(323, 209)
+
+[node name="smallPillar" parent="." instance=ExtResource("2_gi730")]
+position = Vector2(515, 1914)
+
+[node name="StaticBody2D" parent="smallPillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(109, 159)
+
+[node name="StaticBody2D6" parent="smallPillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 104)
+
+[node name="StaticBody2D5" parent="smallPillar" instance=ExtResource("2_gi730")]
+position = Vector2(108, 0)
+
+[node name="StaticBody2D7" parent="smallPillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(108, 104)
+
+[node name="grassPlatform" parent="." instance=ExtResource("3_pu6iv")]
+position = Vector2(850, 1851)
+
+[node name="StaticBody2D3" parent="grassPlatform" instance=ExtResource("3_pu6iv")]
+position = Vector2(104, 0)
+
+[node name="StaticBody2D4" parent="grassPlatform" instance=ExtResource("4_35rus")]
+position = Vector2(0, -44)
+
+[node name="StaticBody2D" parent="grassPlatform" instance=ExtResource("4_35rus")]
+position = Vector2(104, -44)
+
+[node name="StaticBody2D2" parent="grassPlatform" instance=ExtResource("4_35rus")]
+position = Vector2(-40, 0)
+rotation = -1.5708
+
+[node name="StaticBody2D5" parent="grassPlatform" instance=ExtResource("4_35rus")]
+position = Vector2(144, 0)
+rotation = 1.5708
+
+[node name="largeBlock" parent="." instance=ExtResource("5_3h115")]
+position = Vector2(1209, 1763)
+
+[node name="smallBlock" parent="." instance=ExtResource("6_gr3ly")]
+position = Vector2(1464, 1763)
+
+[node name="largePillar" parent="." instance=ExtResource("3_pu6iv")]
+position = Vector2(1668, 1361)
+
+[node name="StaticBody2D6" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 508)
+
+[node name="StaticBody2D11" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 295)
+
+[node name="StaticBody2D10" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 202)
+
+[node name="StaticBody2D9" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 95)
+
+[node name="StaticBody2D4" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 103)
+
+[node name="StaticBody2D7" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 202)
+
+[node name="StaticBody2D8" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 301)
+
+[node name="StaticBody2D5" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 0)
+
+[node name="StaticBody2D12" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 402)
+
+[node name="StaticBody2D13" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 402)
+
+[node name="StaticBody2D14" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 508)
+
+[node name="StaticBody2D15" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 617)
+
+[node name="StaticBody2D16" parent="largePillar" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 617)
+
+[node name="StaticBody2D19" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(-44, -5)
+rotation = -1.5708
+
+[node name="StaticBody2D17" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(0, -46)
+
+[node name="StaticBody2D18" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(99, -46)
+
+[node name="StaticBody2D20" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 95)
+rotation = -1.5708
+
+[node name="StaticBody2D21" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 202)
+rotation = -1.5708
+
+[node name="StaticBody2D22" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 308)
+rotation = -1.5708
+
+[node name="StaticBody2D24" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 521)
+rotation = -1.5708
+
+[node name="StaticBody2D25" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 616)
+rotation = -1.5708
+
+[node name="StaticBody2D23" parent="largePillar" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 415)
+rotation = -1.5708
+
+[node name="largePillar2" parent="." instance=ExtResource("3_pu6iv")]
+position = Vector2(1394, 1509)
+rotation = 3.14159
+
+[node name="StaticBody2D6" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 508)
+
+[node name="StaticBody2D11" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 295)
+
+[node name="StaticBody2D10" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 202)
+
+[node name="StaticBody2D9" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 95)
+
+[node name="StaticBody2D4" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 103)
+
+[node name="StaticBody2D7" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 202)
+
+[node name="StaticBody2D8" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 301)
+
+[node name="StaticBody2D5" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 0)
+
+[node name="StaticBody2D12" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 402)
+
+[node name="StaticBody2D13" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 402)
+
+[node name="StaticBody2D14" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 508)
+
+[node name="StaticBody2D15" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 617)
+
+[node name="StaticBody2D16" parent="largePillar2" instance=ExtResource("3_pu6iv")]
+position = Vector2(99, 617)
+
+[node name="StaticBody2D19" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(-44, -5)
+rotation = -1.5708
+
+[node name="StaticBody2D17" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(0, -46)
+
+[node name="StaticBody2D18" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(99, -46)
+
+[node name="StaticBody2D20" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 95)
+rotation = -1.5708
+
+[node name="StaticBody2D21" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 202)
+rotation = -1.5708
+
+[node name="StaticBody2D22" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 308)
+rotation = -1.5708
+
+[node name="StaticBody2D24" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 521)
+rotation = -1.5708
+
+[node name="StaticBody2D25" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 616)
+rotation = -1.5708
+
+[node name="StaticBody2D23" parent="largePillar2" instance=ExtResource("4_35rus")]
+position = Vector2(-44, 415)
+rotation = -1.5708
