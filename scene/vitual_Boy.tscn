@@ -274,19 +274,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0r3o8"]
-size = Vector2(46, 58)
+size = Vector2(46, 51)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(-2, 195)
 script = ExtResource("1_023ca")
 
 [node name="animatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -50)
 scale = Vector2(2.23438, 2.23438)
 sprite_frames = SubResource("SpriteFrames_sejgb")
-animation = &"wallJump"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 7)
+position = Vector2(0, -41.5)
 shape = SubResource("RectangleShape2D_0r3o8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
