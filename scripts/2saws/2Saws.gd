@@ -2,10 +2,10 @@ extends Node2D
 
 @onready var path_follow : PathFollow2D = $Path2D/PathFollow2D
 @export var speed = 200
-@onready var path_follow2 : PathFollow2D = $Path2D2/PathFollow2D2
+@onready var path_follow2 : PathFollow2D = $Path2D2/PathFollow2D
 
 @onready var animation_sprite =  $Path2D/PathFollow2D/AnimatedSprite2D
-@onready var animation_sprite2 = $Path2D2/PathFollow2D2/AnimatedSprite2D
+@onready var animation_sprite2 = $Path2D2/PathFollow2D/AnimatedSprite2D
 
 func _ready() -> void:
 	animation_sprite.play("on")

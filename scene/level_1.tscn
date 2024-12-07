@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://duk63pctrmfq6"]
+[gd_scene load_steps=21 format=3 uid="uid://duk63pctrmfq6"]
 
 [ext_resource type="PackedScene" uid="uid://bwtukao5xo71u" path="res://scene/vitual_Boy.tscn" id="1_v4n18"]
 [ext_resource type="PackedScene" uid="uid://ceu5mhtcluggb" path="res://scene/floors/grass/grassFloor.tscn" id="2_gi730"]
@@ -6,11 +6,140 @@
 [ext_resource type="PackedScene" uid="uid://c3ig0d1jifcm" path="res://scene/floors/grass/cape_grass.tscn" id="4_35rus"]
 [ext_resource type="PackedScene" uid="uid://cr5upjxbyvgmv" path="res://scene/floors/block/largeBlock.tscn" id="5_3h115"]
 [ext_resource type="PackedScene" uid="uid://dk15ho0hyacen" path="res://scene/floors/block/block.tscn" id="6_gr3ly"]
+[ext_resource type="Texture2D" uid="uid://r4ow6u826xbt" path="res://sprites/saw/On (38x38).png" id="7_0ptnh"]
+[ext_resource type="Script" path="res://scripts/2saws/2Saws.gd" id="7_6m1t5"]
+
+[sub_resource type="Curve2D" id="Curve2D_kckkm"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3513, -167, 0, 0, 0, 0, 3830, -170, 0, 0, 0, 0, 3831, 31, 0, 0, 0, 0, 3511, 30, 0, 0, 0, 0, 3511, -162)
+}
+point_count = 5
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlscl"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyvtr"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43npl"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_feq3r"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ho7py"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aasey"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kvwf6"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_js38n"]
+atlas = ExtResource("7_0ptnh")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_moob6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qlscl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyvtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43npl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_feq3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ho7py")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aasey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kvwf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_js38n")
+}],
+"loop": true,
+"name": &"on",
+"speed": 24.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eoppf"]
+radius = 31.0642
+
+[sub_resource type="Curve2D" id="Curve2D_xs021"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3831, 32, 0, 0, 0, 0, 3513, 31, 0, 0, 0, 0, 3512, -166, 0, 0, 0, 0, 3831, -165, 0, 0, 0, 0, 3833, 19)
+}
+point_count = 5
 
 [node name="level1" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_v4n18")]
-position = Vector2(2724, 1717)
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(0, 1832)
+script = ExtResource("7_6m1t5")
+
+[node name="Path2D" type="Path2D" parent="Node2D"]
+curve = SubResource("Curve2D_kckkm")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Node2D/Path2D"]
+position = Vector2(3513, -167)
+rotation = -0.00946344
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D/Path2D/PathFollow2D"]
+position = Vector2(0.0283203, -2.99976)
+scale = Vector2(1.84649, 1.84649)
+sprite_frames = SubResource("SpriteFrames_moob6")
+animation = &"on"
+frame = 2
+frame_progress = 0.504022
+
+[node name="Area2D" type="Area2D" parent="Node2D/Path2D/PathFollow2D"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Path2D/PathFollow2D/Area2D"]
+position = Vector2(0.0283899, -2.99987)
+shape = SubResource("CircleShape2D_eoppf")
+
+[node name="Path2D2" type="Path2D" parent="Node2D"]
+curve = SubResource("Curve2D_xs021")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Node2D/Path2D2"]
+position = Vector2(3831, 32)
+rotation = -3.13845
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D/Path2D2/PathFollow2D"]
+position = Vector2(0.0283203, -2.99976)
+scale = Vector2(1.84649, 1.84649)
+sprite_frames = SubResource("SpriteFrames_moob6")
+animation = &"on"
+frame_progress = 0.572372
+
+[node name="Area2D" type="Area2D" parent="Node2D/Path2D2/PathFollow2D"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Path2D2/PathFollow2D/Area2D"]
+position = Vector2(0.0283899, -2.99987)
+shape = SubResource("CircleShape2D_eoppf")
+
+[node name="VirtualBoy" parent="." instance=ExtResource("1_v4n18")]
+position = Vector2(3776, 1631)
+collision_layer = 2
 
 [node name="structure" parent="." instance=ExtResource("2_gi730")]
 position = Vector2(0, 1832)
@@ -233,17 +362,5 @@ position = Vector2(107, 93)
 [node name="StaticBody2D6" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
 position = Vector2(209, 93)
 
-[node name="StaticBody2D5" parent="structure/grassFlor6x9" instance=ExtResource("2_gi730")]
-position = Vector2(311, 0)
-
-[node name="StaticBody2D7" parent="structure/grassFlor6x9" instance=ExtResource("2_gi730")]
-position = Vector2(209, 0)
-
-[node name="StaticBody2D4" parent="structure/grassFlor6x9/StaticBody2D7" instance=ExtResource("2_gi730")]
-position = Vector2(205, 0)
-
-[node name="StaticBody2D8" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
-position = Vector2(311, 93)
-
-[node name="StaticBody2D10" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
-position = Vector2(414, 93)
+[connection signal="body_entered" from="Node2D/Path2D/PathFollow2D/Area2D" to="VirtualBoy" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Node2D/Path2D2/PathFollow2D/Area2D" to="VirtualBoy" method="_on_area_2d_body_entered"]
