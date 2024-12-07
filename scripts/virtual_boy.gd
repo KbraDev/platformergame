@@ -3,10 +3,13 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -450.0
 
+var health = 3
+
 @onready var animated_sprite = $animatedSprite2D
 
 func _ready() -> void:
 	animated_sprite.play("idle")
+	print(health)
 
 func _physics_process(delta: float) -> void:
 	handle_gravity(delta)

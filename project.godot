@@ -22,6 +22,7 @@ folder_colors={
 "res://scene/": "orange",
 "res://scripts/": "yellow",
 "res://sprites/": "green",
+"res://sprites/saw/": "gray",
 "res://sprites/trampoline/": "orange",
 "res://sprites/virtualBoy/": "blue"
 }

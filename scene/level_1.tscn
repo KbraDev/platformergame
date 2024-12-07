@@ -12,235 +12,238 @@
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_v4n18")]
 position = Vector2(2724, 1717)
 
-[node name="floor" parent="." instance=ExtResource("2_gi730")]
+[node name="structure" parent="." instance=ExtResource("2_gi730")]
 position = Vector2(0, 1832)
 
-[node name="StaticBody2D7" parent="floor" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D7" parent="structure" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 98)
 
-[node name="StaticBody2D8" parent="floor" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D8" parent="structure" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 190)
 
-[node name="StaticBody2D" parent="floor" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D" parent="structure" instance=ExtResource("2_gi730")]
 position = Vector2(104, 94)
 
-[node name="StaticBody2D9" parent="floor/StaticBody2D" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D9" parent="structure/StaticBody2D" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 98)
 
-[node name="StaticBody2D3" parent="floor/StaticBody2D" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D3" parent="structure/StaticBody2D" instance=ExtResource("2_gi730")]
 position = Vector2(107, 0)
 
-[node name="StaticBody2D4" parent="floor/StaticBody2D" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D4" parent="structure/StaticBody2D" instance=ExtResource("2_gi730")]
 position = Vector2(215, 0)
 
-[node name="StaticBody2D" parent="floor/StaticBody2D" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/StaticBody2D" instance=ExtResource("3_pu6iv")]
 position = Vector2(107, 98)
 
-[node name="StaticBody2D6" parent="floor/StaticBody2D" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D6" parent="structure/StaticBody2D" instance=ExtResource("3_pu6iv")]
 position = Vector2(215, 98)
 
-[node name="pilar6x6" parent="floor" instance=ExtResource("2_gi730")]
+[node name="pilar6x6" parent="structure" instance=ExtResource("2_gi730")]
 position = Vector2(568, 94)
 
-[node name="StaticBody2D" parent="floor/pilar6x6" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/pilar6x6" instance=ExtResource("3_pu6iv")]
 position = Vector2(108, 207)
 
-[node name="StaticBody2D6" parent="floor/pilar6x6" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D6" parent="structure/pilar6x6" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 104)
 
-[node name="StaticBody2D5" parent="floor/pilar6x6" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D5" parent="structure/pilar6x6" instance=ExtResource("2_gi730")]
 position = Vector2(108, 0)
 
-[node name="StaticBody2D7" parent="floor/pilar6x6" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D7" parent="structure/pilar6x6" instance=ExtResource("3_pu6iv")]
 position = Vector2(108, 104)
 
-[node name="StaticBody2D10" parent="floor/pilar6x6" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D10" parent="structure/pilar6x6" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 207)
 
-[node name="grassPlatform" parent="floor" instance=ExtResource("3_pu6iv")]
+[node name="grassPlatform" parent="structure" instance=ExtResource("3_pu6iv")]
 position = Vector2(939, 0)
 
-[node name="StaticBody2D3" parent="floor/grassPlatform" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D3" parent="structure/grassPlatform" instance=ExtResource("3_pu6iv")]
 position = Vector2(104, 0)
 
-[node name="StaticBody2D4" parent="floor/grassPlatform" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D4" parent="structure/grassPlatform" instance=ExtResource("4_35rus")]
 position = Vector2(0, -44)
 
-[node name="StaticBody2D" parent="floor/grassPlatform" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D" parent="structure/grassPlatform" instance=ExtResource("4_35rus")]
 position = Vector2(104, -44)
 
-[node name="StaticBody2D2" parent="floor/grassPlatform" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D2" parent="structure/grassPlatform" instance=ExtResource("4_35rus")]
 position = Vector2(-40, 0)
 rotation = -1.5708
 
-[node name="StaticBody2D5" parent="floor/grassPlatform" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D5" parent="structure/grassPlatform" instance=ExtResource("4_35rus")]
 position = Vector2(144, 0)
 rotation = 1.5708
 
-[node name="grassFlor6x6" parent="floor" instance=ExtResource("2_gi730")]
+[node name="grassFlor6x6" parent="structure" instance=ExtResource("2_gi730")]
 position = Vector2(1662, 2)
 
-[node name="StaticBody2D9" parent="floor/grassFlor6x6" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D9" parent="structure/grassFlor6x6" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 98)
 
-[node name="StaticBody2D3" parent="floor/grassFlor6x6" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D3" parent="structure/grassFlor6x6" instance=ExtResource("2_gi730")]
 position = Vector2(107, 0)
 
-[node name="StaticBody2D4" parent="floor/grassFlor6x6" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D4" parent="structure/grassFlor6x6" instance=ExtResource("2_gi730")]
 position = Vector2(215, 0)
 
-[node name="StaticBody2D" parent="floor/grassFlor6x6" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/grassFlor6x6" instance=ExtResource("3_pu6iv")]
 position = Vector2(107, 98)
 
-[node name="StaticBody2D6" parent="floor/grassFlor6x6" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D6" parent="structure/grassFlor6x6" instance=ExtResource("3_pu6iv")]
 position = Vector2(215, 98)
 
-[node name="grassFlor6x6_1" parent="floor" instance=ExtResource("2_gi730")]
+[node name="grassFlor6x6_1" parent="structure" instance=ExtResource("2_gi730")]
 position = Vector2(1978, 148)
 
-[node name="StaticBody2D9" parent="floor/grassFlor6x6_1" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D9" parent="structure/grassFlor6x6_1" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 98)
 
-[node name="StaticBody2D3" parent="floor/grassFlor6x6_1" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D3" parent="structure/grassFlor6x6_1" instance=ExtResource("2_gi730")]
 position = Vector2(107, 0)
 
-[node name="StaticBody2D4" parent="floor/grassFlor6x6_1" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D4" parent="structure/grassFlor6x6_1" instance=ExtResource("2_gi730")]
 position = Vector2(215, 0)
 
-[node name="StaticBody2D" parent="floor/grassFlor6x6_1" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/grassFlor6x6_1" instance=ExtResource("3_pu6iv")]
 position = Vector2(107, 98)
 
-[node name="StaticBody2D6" parent="floor/grassFlor6x6_1" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D6" parent="structure/grassFlor6x6_1" instance=ExtResource("3_pu6iv")]
 position = Vector2(215, 98)
 
-[node name="grassFlor6x8" parent="floor" instance=ExtResource("2_gi730")]
+[node name="grassFlor6x8" parent="structure" instance=ExtResource("2_gi730")]
 position = Vector2(2300, 148)
 
-[node name="StaticBody2D9" parent="floor/grassFlor6x8" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D9" parent="structure/grassFlor6x8" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 98)
 
-[node name="StaticBody2D3" parent="floor/grassFlor6x8" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D3" parent="structure/grassFlor6x8" instance=ExtResource("2_gi730")]
 position = Vector2(107, 0)
 
-[node name="StaticBody2D4" parent="floor/grassFlor6x8" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D4" parent="structure/grassFlor6x8" instance=ExtResource("2_gi730")]
 position = Vector2(215, 0)
 
-[node name="StaticBody2D" parent="floor/grassFlor6x8" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/grassFlor6x8" instance=ExtResource("3_pu6iv")]
 position = Vector2(107, 98)
 
-[node name="StaticBody2D6" parent="floor/grassFlor6x8" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D6" parent="structure/grassFlor6x8" instance=ExtResource("3_pu6iv")]
 position = Vector2(215, 98)
 
-[node name="grassPlatform2" parent="floor" instance=ExtResource("3_pu6iv")]
+[node name="grassPlatform2" parent="structure" instance=ExtResource("3_pu6iv")]
 position = Vector2(2189, -61)
 
-[node name="StaticBody2D3" parent="floor/grassPlatform2" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D3" parent="structure/grassPlatform2" instance=ExtResource("3_pu6iv")]
 position = Vector2(104, 0)
 
-[node name="StaticBody2D4" parent="floor/grassPlatform2" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D4" parent="structure/grassPlatform2" instance=ExtResource("4_35rus")]
 position = Vector2(0, -44)
 
-[node name="StaticBody2D" parent="floor/grassPlatform2" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D" parent="structure/grassPlatform2" instance=ExtResource("4_35rus")]
 position = Vector2(104, -44)
 
-[node name="StaticBody2D2" parent="floor/grassPlatform2" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D2" parent="structure/grassPlatform2" instance=ExtResource("4_35rus")]
 position = Vector2(-40, 0)
 rotation = -1.5708
 
-[node name="StaticBody2D5" parent="floor/grassPlatform2" instance=ExtResource("4_35rus")]
+[node name="StaticBody2D5" parent="structure/grassPlatform2" instance=ExtResource("4_35rus")]
 position = Vector2(144, 0)
 rotation = 1.5708
 
-[node name="dirtSix" parent="floor" instance=ExtResource("3_pu6iv")]
+[node name="dirtSix" parent="structure" instance=ExtResource("3_pu6iv")]
 position = Vector2(1662, 148)
 
-[node name="StaticBody2D5" parent="floor/dirtSix" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D5" parent="structure/dirtSix" instance=ExtResource("3_pu6iv")]
 position = Vector2(108, 0)
 
-[node name="StaticBody2D6" parent="floor/dirtSix" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D6" parent="structure/dirtSix" instance=ExtResource("3_pu6iv")]
 position = Vector2(216, 0)
 
-[node name="StaticBody2D3" parent="floor/dirtSix" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D3" parent="structure/dirtSix" instance=ExtResource("3_pu6iv")]
 position = Vector2(216, 99)
 
-[node name="StaticBody2D2" parent="floor/dirtSix" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D2" parent="structure/dirtSix" instance=ExtResource("3_pu6iv")]
 position = Vector2(108, 99)
 
-[node name="StaticBody2D" parent="floor/dirtSix" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/dirtSix" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 99)
 
-[node name="grassFlor6x7" parent="floor" instance=ExtResource("2_gi730")]
+[node name="grassFlor6x7" parent="structure" instance=ExtResource("2_gi730")]
 position = Vector2(2616, -7)
 
-[node name="StaticBody2D9" parent="floor/grassFlor6x7" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D9" parent="structure/grassFlor6x7" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 98)
 
-[node name="StaticBody2D3" parent="floor/grassFlor6x7" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D3" parent="structure/grassFlor6x7" instance=ExtResource("2_gi730")]
 position = Vector2(107, 0)
 
-[node name="StaticBody2D4" parent="floor/grassFlor6x7" instance=ExtResource("2_gi730")]
-position = Vector2(215, 0)
+[node name="StaticBody2D4" parent="structure/grassFlor6x7" instance=ExtResource("2_gi730")]
+position = Vector2(212, 0)
 
-[node name="StaticBody2D" parent="floor/grassFlor6x7" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/grassFlor6x7" instance=ExtResource("3_pu6iv")]
 position = Vector2(107, 98)
 
-[node name="StaticBody2D6" parent="floor/grassFlor6x7" instance=ExtResource("3_pu6iv")]
-position = Vector2(215, 98)
+[node name="StaticBody2D6" parent="structure/grassFlor6x7" instance=ExtResource("3_pu6iv")]
+position = Vector2(212, 98)
 
-[node name="dirtSix2" parent="floor" instance=ExtResource("3_pu6iv")]
+[node name="dirtSix2" parent="structure" instance=ExtResource("3_pu6iv")]
 position = Vector2(2616, 148)
 
-[node name="StaticBody2D5" parent="floor/dirtSix2" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D5" parent="structure/dirtSix2" instance=ExtResource("3_pu6iv")]
 position = Vector2(108, 0)
 
-[node name="StaticBody2D6" parent="floor/dirtSix2" instance=ExtResource("3_pu6iv")]
-position = Vector2(215, 0)
+[node name="StaticBody2D6" parent="structure/dirtSix2" instance=ExtResource("3_pu6iv")]
+position = Vector2(212, 0)
 
-[node name="StaticBody2D3" parent="floor/dirtSix2" instance=ExtResource("3_pu6iv")]
-position = Vector2(215, 99)
+[node name="StaticBody2D3" parent="structure/dirtSix2" instance=ExtResource("3_pu6iv")]
+position = Vector2(212, 99)
 
-[node name="StaticBody2D2" parent="floor/dirtSix2" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D2" parent="structure/dirtSix2" instance=ExtResource("3_pu6iv")]
 position = Vector2(108, 99)
 
-[node name="StaticBody2D" parent="floor/dirtSix2" instance=ExtResource("3_pu6iv")]
+[node name="StaticBody2D" parent="structure/dirtSix2" instance=ExtResource("3_pu6iv")]
 position = Vector2(0, 99)
 
-[node name="largeBlock" parent="floor" instance=ExtResource("5_3h115")]
+[node name="largeBlock" parent="structure" instance=ExtResource("5_3h115")]
 position = Vector2(1346, 0)
 
-[node name="StaticBody2D2" parent="floor" instance=ExtResource("5_3h115")]
-position = Vector2(3490, -201)
-
-[node name="StaticBody2D3" parent="floor" instance=ExtResource("6_gr3ly")]
+[node name="StaticBody2D3" parent="structure" instance=ExtResource("6_gr3ly")]
 position = Vector2(3033, -61)
 
-[node name="StaticBody2D2" parent="floor/StaticBody2D3" instance=ExtResource("6_gr3ly")]
+[node name="StaticBody2D2" parent="structure/StaticBody2D3" instance=ExtResource("6_gr3ly")]
 position = Vector2(404.297, -119.141)
 scale = Vector2(1, 1)
 
-[node name="StaticBody2D4" parent="floor" instance=ExtResource("5_3h115")]
-position = Vector2(3888, -201)
+[node name="grassFlor6x9" parent="structure" instance=ExtResource("2_gi730")]
+position = Vector2(3567, -115)
 
-[node name="StaticBody2D5" parent="floor" instance=ExtResource("6_gr3ly")]
-position = Vector2(4158, -122)
+[node name="StaticBody2D9" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
+position = Vector2(0, 93)
 
-[node name="StaticBody2D6" parent="floor" instance=ExtResource("6_gr3ly")]
-position = Vector2(4370, -61)
-
-[node name="grassFlor6x9" parent="floor" instance=ExtResource("2_gi730")]
-position = Vector2(4619, 145)
-
-[node name="StaticBody2D9" parent="floor/grassFlor6x9" instance=ExtResource("3_pu6iv")]
-position = Vector2(0, 98)
-
-[node name="StaticBody2D3" parent="floor/grassFlor6x9" instance=ExtResource("2_gi730")]
+[node name="StaticBody2D3" parent="structure/grassFlor6x9" instance=ExtResource("2_gi730")]
 position = Vector2(107, 0)
 
-[node name="StaticBody2D4" parent="floor/grassFlor6x9" instance=ExtResource("2_gi730")]
-position = Vector2(215, 0)
+[node name="StaticBody2D4" parent="structure/grassFlor6x9" instance=ExtResource("2_gi730")]
+position = Vector2(209, 0)
 
-[node name="StaticBody2D" parent="floor/grassFlor6x9" instance=ExtResource("3_pu6iv")]
-position = Vector2(107, 98)
+[node name="StaticBody2D" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
+position = Vector2(107, 93)
 
-[node name="StaticBody2D6" parent="floor/grassFlor6x9" instance=ExtResource("3_pu6iv")]
-position = Vector2(215, 98)
+[node name="StaticBody2D6" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
+position = Vector2(209, 93)
+
+[node name="StaticBody2D5" parent="structure/grassFlor6x9" instance=ExtResource("2_gi730")]
+position = Vector2(311, 0)
+
+[node name="StaticBody2D7" parent="structure/grassFlor6x9" instance=ExtResource("2_gi730")]
+position = Vector2(209, 0)
+
+[node name="StaticBody2D4" parent="structure/grassFlor6x9/StaticBody2D7" instance=ExtResource("2_gi730")]
+position = Vector2(205, 0)
+
+[node name="StaticBody2D8" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
+position = Vector2(311, 93)
+
+[node name="StaticBody2D10" parent="structure/grassFlor6x9" instance=ExtResource("3_pu6iv")]
+position = Vector2(414, 93)
